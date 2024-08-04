@@ -130,6 +130,7 @@ export interface Assessment {
   number: string;
   groupRoles?: GroupRole[];
   allowIssueReporting?: boolean;
+  allowPersonalNotes?: boolean;
   allowRealTimeGrading?: boolean;
   requireHonorCode?: boolean;
   multipleInstance?: boolean;

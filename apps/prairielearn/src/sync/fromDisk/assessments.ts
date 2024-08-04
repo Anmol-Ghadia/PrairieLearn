@@ -53,6 +53,7 @@ function getParamsForAssessment(
   if (!assessment) throw new Error(`Missing assessment data for ${assessmentInfoFile.uuid}`);
 
   const allowIssueReporting = !!_.get(assessment, 'allowIssueReporting', true);
+  const allowPersonalNotes = !!_.get(assessment, 'allowPersonalNotes', true);
   const allowRealTimeGrading = !!_.get(assessment, 'allowRealTimeGrading', true);
   const requireHonorCode = !!_.get(assessment, 'requireHonorCode', true);
 
@@ -259,6 +260,7 @@ function getParamsForAssessment(
         ? true
         : false,
     allow_issue_reporting: allowIssueReporting,
+    allow_personal_notes: allowPersonalNotes,
     allow_real_time_grading: allowRealTimeGrading,
     require_honor_code: requireHonorCode,
     auto_close: !!_.get(assessment, 'autoClose', true),

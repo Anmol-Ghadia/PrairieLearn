@@ -318,6 +318,7 @@ export interface Assessment {
   module: string;
   number: string;
   allowIssueReporting: boolean;
+  allowPersonalNotes: boolean;
   allowRealTimeGrading: boolean;
   multipleInstance: boolean;
   shuffleQuestions: boolean;

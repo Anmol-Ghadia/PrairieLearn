@@ -36,6 +36,11 @@
       "type": "boolean",
       "default": true
     },
+    "allowPersonalNotes": {
+      "description": "Removes the personal notes section from every question",
+      "type": "boolean",
+      "default": true
+    },
     "multipleInstance": {
       "description": "Whether to allow students to create additional instances of the assessment",
       "type": "boolean",
